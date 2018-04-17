@@ -10,7 +10,9 @@ func LengthOfLongestSubstring(s string) int {
 
 	maxLen := 1 // must be at least one at this point
 	for i := range s {
-		maxLen = max(maxLen, unique(s[i:]))
+		lu := unique(s[i:])
+		maxLen = max(maxLen, lu)
+		i += lu
 	}
 	return maxLen
 }
