@@ -1,3 +1,3 @@
 # LeetGo
 
-## Attempting to solve leetcode.com in [Go](https://golang.org/)
+## Attempting to solve [LeetCode](https://leetcode.com) in [Go](https://golang.org/)
