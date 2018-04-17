@@ -1,7 +1,5 @@
 package parentheses
 
-import "fmt"
-
 // IsValid returns true if parentheses match
 func IsValid(s string) bool {
 	var st []rune
@@ -12,16 +10,13 @@ func IsValid(s string) bool {
 			if len(st) == 0 {
 				return false
 			}
-			fmt.Println(st)
 			top := st[len(st)-1]
-			fmt.Println(string(top), string(e))
 			if !match(top, e) {
 				return false
 			}
 			st = st[:len(st)-1]
 		}
 	}
-	fmt.Println("in here", st)
 	return len(st) == 0
 }
 
