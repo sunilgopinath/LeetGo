@@ -1,8 +1,13 @@
 // Package complement returns the complement of an integer https://leetcode.com/problems/number-complement/description/
 package complement
 
+import (
+	"math"
+	"strconv"
+)
+
 func findComplement(num int) int {
-    return toDecimal(complement(toBinary(num)))
+	return toDecimal(complement(toBinary(num)))
 }
 
 func toBinary(n int) string {
